@@ -2,9 +2,9 @@
 
 ## Small difference compare to JS
 
--Component Name using PascalCase;
+- Component Name using PascalCase;
 
--JSX Fragment: <>...</>
+- JSX Fragment: <>...</>
 e.g.
 ```return (
   <>
