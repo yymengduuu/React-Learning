@@ -32,7 +32,9 @@ export default function Header() {
         </header>
     )
 }
+```
 ---
+```
 import { createRoot } from "react-dom/client"
 import Header from "./Header"
 const root = createRoot(document.getElementById("root"))
