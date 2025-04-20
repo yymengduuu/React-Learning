@@ -1,7 +1,10 @@
 # React-Learning
-##Component Name using PascalCase;
 
-##JSX Fragment: <>...</>
+## Small difference compare to JS
+
+-Component Name using PascalCase;
+
+-JSX Fragment: <>...</>
 e.g.
 ```return (
   <>
