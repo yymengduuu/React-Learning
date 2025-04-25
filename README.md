@@ -6,16 +6,16 @@
 - className instad of class in JS;
 
 ## JSX Basic Knowledge 
-	•	JSX is a syntax extension for JavaScript that lets you write UI elements that look like HTML.
-	•	All tags must be properly closed.
-	•	Attributes use camelCase naming, like className and onClick.
-	•	Can insert variables, expressions, or function results inside curly braces {}.
+- JSX is a syntax extension for JavaScript that lets you write UI elements that look like HTML.
+- All tags must be properly closed.
+- Attributes use camelCase naming, like className and onClick.
+- Can insert variables, expressions, or function results inside curly braces {}.
 
  ## React Components Basics
- 	•	Component names must be capitalized (PascalCase, e.g., Header, App).
-	•	A component is simply a function that returns JSX.
-	•	To use a component inside JSX: <MyComponent />
-	•	Components receive data through props.
+- Component names must be capitalized (PascalCase, e.g., Header, App).
+- A component is simply a function that returns JSX.
+- To use a component inside JSX: <MyComponent />
+- Components receive data through props.
 
 ## Props (Passing Data)
 - Parent components pass data to child components via props.
@@ -26,15 +26,15 @@
 function Greeting(props) {
   return <h1>Hello, {props.name}!</h1>;
 }
+```
 
 ## useState (Managing State)
-	•	useState() is used to store dynamic values inside components.
-	•	Syntax:
- ```
-const [state, setState] = React.useState(initialValue)
+- useState() is used to store dynamic values inside components.
+- Syntax:
+ ```const [state, setState] = React.useState(initialValue)
 ```
-	•	Interactions like button clicks or text input will update the state via setState, causing a re-render.
-	•	Functional updates (recommended for depending on previous state):
+- Interactions like button clicks or text input will update the state via setState, causing a re-render.
+- Functional updates (recommended for depending on previous state):
  ```
 setState(prev => prev + 1)
 ```
