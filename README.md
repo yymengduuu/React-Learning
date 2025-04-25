@@ -17,15 +17,15 @@
 	•	To use a component inside JSX: <MyComponent />
 	•	Components receive data through props.
 
- ## Props (Passing Data)
- 	•	Parent components pass data to child components via props.
-	•	Child components access props through {props} or destructuring.
-	•	Example:
- ```
+## Props (Passing Data)
+- Parent components pass data to child components via props.
+- Child components access props through `{props}` or destructuring.
+- Example:
+
+```javascript
 function Greeting(props) {
-  return <h1>Hello, {props.name}!</h1>
+  return <h1>Hello, {props.name}!</h1>;
 }
-```
 
 ## useState (Managing State)
 	•	useState() is used to store dynamic values inside components.
