@@ -31,21 +31,20 @@ function Greeting(props) {
 ## useState (Managing State)
 - useState() is used to store dynamic values inside components.
 - Syntax:
- ```const [state, setState] = React.useState(initialValue)
+```const [state, setState] = React.useState(initialValue)
 ```
 - Interactions like button clicks or text input will update the state via setState, causing a re-render.
 - Functional updates (recommended for depending on previous state):
- ```
-setState(prev => prev + 1)
+```setState(prev => prev + 1)
 ```
 
 ## Conditional Rendering
-	•	Use logical AND && to render something only if a condition is true:
- ```
+- Use logical AND && to render something only if a condition is true:
+```
 {isShown && <p>Punchline</p>}
 ```
- 	•	Use ternary operator ? : to render different content based on a condition:
-  ```
+- Use ternary operator ? : to render different content based on a condition:
+```
 {isShown ? "Hide" : "Show"}
 ```
 
