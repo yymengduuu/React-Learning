@@ -22,7 +22,8 @@
 - Child components access props through `{props}` or destructuring.
 - Example:
 
-```javascript
+```
+javascript
 function Greeting(props) {
   return <h1>Hello, {props.name}!</h1>;
 }
@@ -31,11 +32,13 @@ function Greeting(props) {
 ## useState (Managing State)
 - useState() is used to store dynamic values inside components.
 - Syntax:
-```const [state, setState] = React.useState(initialValue)
+```
+const [state, setState] = React.useState(initialValue)
 ```
 - Interactions like button clicks or text input will update the state via setState, causing a re-render.
 - Functional updates (recommended for depending on previous state):
-```setState(prev => prev + 1)
+```
+setState(prev => prev + 1)
 ```
 
 ## Conditional Rendering
@@ -49,14 +52,14 @@ function Greeting(props) {
 ```
 
 ## Rendering Lists
-	•	Use .map() to generate multiple elements from an array:
- ```
+- Use .map() to generate multiple elements from an array:
+```
 const listItems = data.map(item => <li key={item.id}>{item.name}</li>)
 ```
- 	•	Each element rendered in a list should have a unique key prop.
+- Each element rendered in a list should have a unique key prop.
 
 ## Fragment: 
-	•	Use <>...</> to wrap multiple elements without adding an extra DOM node.
+- Use <>...</> to wrap multiple elements without adding an extra DOM node.
 ```
 return (
   <>
@@ -67,7 +70,7 @@ return (
 ```
 
 ## export default: 
-	•	The export JavaScript keyword makes this function accessible outside of this file:
+- The export JavaScript keyword makes this function accessible outside of this file:
 ```
 export default function Header() {
     return (
@@ -95,19 +98,19 @@ root.render(
 ```
 
 ## Handling Events
-	•	Event handlers use camelCase (e.g., onClick, onChange).
-	•	The event handler should be a function, not a boolean or string.
+- Event handlers use camelCase (e.g., onClick, onChange).
+- The event handler should be a function, not a boolean or string.
  ```
 <button onClick={handleClick}>Click me</button>
 ```
-	•	Can directly use an arrow function for inline event handlers:
+- Can directly use an arrow function for inline event handlers:
  ```
 <button onClick={() => setIsShown(prev => !prev)}>Toggle</button>
 ```
 
 ## Handling Forms
-	•	When submitting a form, can use the action={function}.
-	•	Use FormData to access form field values.
+- When submitting a form, can use the action={function}.
+- Use FormData to access form field values.
 ```
 function handleSubmit(formData) {
   const newIngredient = formData.get("ingredient");
