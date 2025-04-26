@@ -116,3 +116,15 @@ function handleSubmit(formData) {
   const newIngredient = formData.get("ingredient");
 }
 ```
+
+## Pure Functions
+- Given the same props or state, the component will always return
+  the same content, or UI
+- Rendering and re-rendering a component will never have any kind
+  of side effect on an outside system
+
+## "(out)side effect" in React
+- Any code that affects or interacts with an outside system
+- local storage, API, websockets, DOM manipulation
+
+
