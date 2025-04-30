@@ -127,4 +127,72 @@ function handleSubmit(formData) {
 - Any code that affects or interacts with an outside system
 - local storage, API, websockets, DOM manipulation
 
+## useRef Hook
+- Provides a way to reference DOM nodes directly.
+
+- Does not cause re-renders.
+
+- Common uses:
+
+-- Focus control
+
+-- Scrolling
+
+-- Holding mutable values
+```
+const inputRef = useRef(null)
+useEffect(() => {
+    inputRef.current.focus()
+}, [])
+```
+
+## useEffect Dependency Array
+- []: Runs once after the initial render
+
+- [count]: Runs every time count changes
+
+Used for:
+
+- API calls
+
+- DOM interactions
+
+- Adding/removing event listeners
+
+- Side-effects cleanup
+```
+useEffect(() => {
+    // effect code
+}, [dependency])
+```
+
+## Updating Object Arrays in State
+Use .map() and return updated or unchanged objects:
+```
+setDice(oldDice =>
+  oldDice.map(die =>
+    die.id === id ? { ...die, isHeld: !die.isHeld } : die
+  )
+)
+```
+
+## Generating Arrays of Objects
+```
+function generateAllNewDice() {
+  return new Array(10).fill().map(() => ({
+    value: Math.ceil(Math.random() * 6),
+    isHeld: false,
+    id: nanoid()
+  }))
+}
+```
+
+## Auto Focus with useRef
+Improves accessibility and user experience:
+```
+const buttonRef = useRef(null)
+useEffect(() => {
+  if (gameWon) buttonRef.current.focus()
+}, [gameWon])
+```
 
