@@ -134,11 +134,11 @@ function handleSubmit(formData) {
 
 - Common uses:
 
--- Focus control
+1. Focus control
 
--- Scrolling
+2. Scrolling
 
--- Holding mutable values
+3. Holding mutable values
 ```
 const inputRef = useRef(null)
 useEffect(() => {
