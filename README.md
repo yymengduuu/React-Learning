@@ -16,42 +16,41 @@ React is a JavaScript library for building user interfaces, especially for singl
 ## What is JSX?
 
 JSX is a syntax extension for JavaScript that allows you to write HTML-like code in your JavaScript files.
-···
+```
 const element = <h1>Hello, world!</h1>
-···
+```
 JSX gets compiled into React.createElement() calls under the hood.
 
 ## State & Props
 
 ### ✅ state
 State is local, internal data that a component maintains. It is mutable and managed using useState.
-···
+```
 const [count, setCount] = useState(0)
-···
+```
 - state triggers re-render when changed
 - Lives inside the component
 
 ### ✅ props
 Props are read-only values passed from parent to child components.
-···
+```
 function Greeting(props) {
   return <h1>Hello, {props.name}</h1>
 }
-···
+```
 - Used to configure and pass data between components
 - Immutable from the child’s perspective
 
 ### Hooks
 Hooks are special functions that let you use React features in functional components.
-···
+```
 const [count, setCount] = useState(0)
 
 useEffect(() => {
   const timer = setInterval(() => setCount(c => c + 1), 1000)
   return () => clearInterval(timer)
 }, [])
-···
-
+```
 
 ## Small difference compare to JS
 
