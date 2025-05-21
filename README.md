@@ -34,7 +34,7 @@ ls
 
 ### 4. Create a React App 
 ```
-npx create-react-app your-project-name@5
+npx create-react-app@5 {your-project-name}
 ```
 
 ### 5. Start the Development Server
