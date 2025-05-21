@@ -32,9 +32,9 @@ macOS/Linux
 ls
 ```
 
-### 4. Create a React App (locked to version 5)
+### 4. Create a React App 
 ```
-npx create-react-app {your-project-name}@5
+npm create vite@latest {Project Name} -- --template react
 ```
 
 ### 5. Start the Development Server
