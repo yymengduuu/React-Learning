@@ -215,7 +215,7 @@ Used for:
 ```
 useEffect(() => {
     // effect code
-}, [dependency])
+}, [//dependency])
 ```
 
 ## Updating Object Arrays in State
