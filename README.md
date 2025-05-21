@@ -34,7 +34,7 @@ ls
 
 ### 4. Create a React App 
 ```
-npm create vite@latest {Project Name} -- --template react
+npx create-react-app your-project-name@5
 ```
 
 ### 5. Start the Development Server
