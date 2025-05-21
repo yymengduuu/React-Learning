@@ -3,6 +3,16 @@
 
 React is a JavaScript library for building user interfaces, especially for single-page applications. It helps developers build fast, interactive UIs with reusable components and declarative code.
 
+## 🔹 Key Characteristics:
+
+- Component-based
+
+- Declarative rendering
+
+- Virtual DOM
+
+- Unidirectional data flow
+
 ## React Project Setup
 ### 1. Open Terminal 
 
@@ -32,16 +42,6 @@ Once inside the project folder:
 ```
 npm run start
 ```
-
-## 🔹 Key Characteristics:
-
-- Component-based
-
-- Declarative rendering
-
-- Virtual DOM
-
-- Unidirectional data flow
 
 ## What is JSX?
 
