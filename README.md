@@ -3,7 +3,37 @@
 
 React is a JavaScript library for building user interfaces, especially for single-page applications. It helps developers build fast, interactive UIs with reusable components and declarative code.
 
-### 🔹 Key Characteristics:
+## React Project Setup
+### 1. Open Terminal 
+
+macOS/Linux**: Use Terminal (`terminal`)
+
+### 2. Navigate to the folder where you want to create your project
+
+```bash
+# Example: move to the Desktop
+cd ~/Desktop
+```
+
+### 3. Check the current folder contents
+
+macOS/Linux
+```
+ls
+```
+
+### 4. Create a React App (locked to version 5)
+```
+npx create-react-app {your-project-name}@5
+```
+
+### 5. Start the Development Server
+Once inside the project folder:
+```
+npm run start
+```
+
+## 🔹 Key Characteristics:
 
 - Component-based
 
