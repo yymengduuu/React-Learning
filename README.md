@@ -3,7 +3,7 @@
 
 React is a JavaScript library for building user interfaces, especially for single-page applications. It helps developers build fast, interactive UIs with reusable components and declarative code.
 
-## 🔹 Key Characteristics:
+### 🔹 Key Characteristics:
 
 - Component-based
 
@@ -12,6 +12,24 @@ React is a JavaScript library for building user interfaces, especially for singl
 - Virtual DOM
 
 - Unidirectional data flow
+
+### React Component Categories
+#### Stateless / Presentational Components
+-	Do not contain internal state
+-	Receive props and render UI
+-	Often small, focused, and highly reusable
+-	Also known as “presentational components” or “UI components”
+
+#### Stateful Components
+-	Use useState (or other hooks) to manage internal state
+-	Control their own behavior or user input
+-	Can still be reusable and composable
+
+#### Structural Components
+-	Define layout, pages, or overall structure
+-	Often composed of many smaller components
+-	Not always large, but they provide structure
+-	More common in larger applications
 
 ## React Project Setup
 ### 1. Open Terminal 
