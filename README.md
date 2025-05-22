@@ -14,18 +14,18 @@ React is a JavaScript library for building user interfaces, especially for singl
 - Unidirectional data flow
 
 ### React Component Categories
-#### Stateless / Presentational Components
+#### 1. Stateless / Presentational Components
 -	Do not contain internal state
 -	Receive props and render UI
 -	Often small, focused, and highly reusable
 -	Also known as “presentational components” or “UI components”
 
-#### Stateful Components
+#### 2. Stateful Components
 -	Use useState (or other hooks) to manage internal state
 -	Control their own behavior or user input
 -	Can still be reusable and composable
 
-#### Structural Components
+#### 3. Structural Components
 -	Define layout, pages, or overall structure
 -	Often composed of many smaller components
 -	Not always large, but they provide structure
@@ -116,6 +116,27 @@ useEffect(() => {
 - A component is simply a function that returns JSX.
 - To use a component inside JSX: <MyComponent />
 - Components receive data through props.
+
+## React Component Composition
+### What Is Component Composition?
+Component composition is a core principle in React. It allows us to build flexible and reusable components by combining them in a modular way. Composition in React means nesting components inside each other using children props or explicitly passing components as props.
+```
+<Modal>
+  <SuccessMessage />
+</Modal>
+```
+Instead of hardcoding <SuccessMessage /> inside the Modal component, we pass it as a child. This allows us to reuse <Modal /> with different content.
+### Why Is Composition Useful?
+- Makes Components Reusable
+```
+function Modal({ children }) {
+  return <div className="modal">{children}</div>;
+}
+```
+- Solves Prop Drilling
+Composition allows us to inject nested content without passing props through every intermediate layer.
+
+
 
 ## Props (Passing Data)
 - Parent components pass data to child components via props.
