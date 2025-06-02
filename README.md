@@ -319,7 +319,9 @@ useEffect(() => {
 
 ## Race Condition
 A race condition occurs when two or more operations access shared data and try to change it at the same time, but the final result depends on the timing of their execution. This can lead to unpredictable behavior or bugs, especially in asynchronous environments like JavaScript or multithreaded systems.
+
 **How AbortController Helps**
+
 AbortController is a browser API that lets you cancel a fetch request before it completes, helping you prevent race conditions caused by outdated or overlapping requests. When users type quickly in a search box, you might send multiple API requests. If earlier (outdated) requests return later than newer ones, your UI will show incorrect results. AbortController can cancel the previous request before starting a new one.
 ```
 let controller;
