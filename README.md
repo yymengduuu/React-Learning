@@ -267,7 +267,7 @@ useEffect(() => {
 }, [])
 ```
 
-## useEffect Dependency Array
+## useEffect Hook
 - []: Runs once after the initial render
 
 - [count]: Runs every time count changes
@@ -286,6 +286,28 @@ useEffect(() => {
     // effect code
 }, [//dependency])
 ```
+
+**Auto Focus with useRef**
+Improves accessibility and user experience:
+```
+const buttonRef = useRef(null)
+useEffect(() => {
+  if (gameWon) buttonRef.current.focus()
+}, [gameWon])
+```
+
+## useReducer Hook
+useReducer 类似于 useState，但它使用 reducer 函数 来处理状态变化，而不是直接调用 setState。
+tsx
+```
+const [state, dispatch] = useReducer(reducer, initialState);
+```
+- state：就像 useState 的状态值
+- dispatch(action)：你发出的命令
+- reducer(state, action)：一个纯函数，返回新的 state
+- initialState：初始状态
+
+
 
 ## Updating Object Arrays in State
 Use .map() and return updated or unchanged objects:
@@ -306,15 +328,6 @@ function generateAllNewDice() {
     id: nanoid()
   }))
 }
-```
-
-## Auto Focus with useRef
-Improves accessibility and user experience:
-```
-const buttonRef = useRef(null)
-useEffect(() => {
-  if (gameWon) buttonRef.current.focus()
-}, [gameWon])
 ```
 
 ## Race Condition
