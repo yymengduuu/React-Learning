@@ -373,9 +373,9 @@ const fetchData = async (query) => {
 - 用户交互回调中
 
 ## API in Redux: Thunk
-	1.	处理 API 请求（比如登录、加载数据）
-	2.	根据 state 条件 dispatch 不同的 action
-	3.	延迟执行 / 执行副作用操作
+- 处理 API 请求（比如登录、加载数据）
+- 根据 state 条件 dispatch 不同的 action
+- 延迟执行 / 执行副作用操作
  
  ```
 dispatch(async (dispatch, getState) => {
