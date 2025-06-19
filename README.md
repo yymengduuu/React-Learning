@@ -360,4 +360,15 @@ const fetchData = async (query) => {
 };
 ```
 
+# Redux-Learning
+
+## Hooks
+
+### useSelector: 它用来 读取 Redux store 中的状态。
+- 从 Redux 中 读取状态
+- UI 渲染部分
+
+### useDispatch: 它用来 派发（dispatch）action，修改 Redux 中的状态。
+- 向 Redux 发送 action 改状态
+- 用户交互回调中
 
