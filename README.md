@@ -361,6 +361,11 @@ const fetchData = async (query) => {
 ```
 
 # Redux-Learning
+-	store.js 用来储存所有的 reducer，并需要引入 configureStore 和每个 slice。
+-	每个 slice 文件中需要创建 createSlice，并通过 Destructured Export of Action Creators（如 export const { createCustomer } = customerSlice.actions）导出。
+-	接下来，其他组件通过：
+-	useDispatch 可以发送 action（执行某个行为，更新 state）
+-	useSelector 可以访问 Redux 中的某一段 state
 
 ## Hooks
 
